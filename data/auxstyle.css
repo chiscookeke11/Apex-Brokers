@@ -1,0 +1,411 @@
+.top-container-fluid{	
+	height: 70vh;
+	background: linear-gradient(rgba(23, 27, 47, 0.6), rgba(23, 27, 47, 0.6)), url(page-title.jpg);
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 60px 0px ;
+	display: flex;
+	flex-direction: column;
+	gap: 10%;
+	position: relative;
+}
+.top001{
+	width: 100%;
+	flex-basis: 75%;
+	text-align: center;
+	padding: 100px 0;
+	position: absolute;
+	top: 0;
+}
+.top001 h1{
+	color: #fff;
+	font-size: 4rem;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	line-height: 5.9rem;
+}
+.top001 p{
+	color: silver;
+	font-size: 1.3rem;
+}
+.top002{
+	position: absolute;
+	width: 100%;
+	flex-basis: 25%;
+	padding: 30px 70px;
+	bottom: 0;
+}
+.top002 a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: all 0.3s ease-in-out;
+}
+.top002 a:hover{
+	color: #ff6900;
+}
+.top002 ion-icon{
+	color: #ff6900;
+}
+.char{
+	transform: translateY(115px);
+	transition: transform 0.5s;
+}
+.market-choices{
+	padding: 50px 50px;
+	background: #fff;
+}
+.choice-pic{
+	width: 100%;
+	border-radius: inherit;
+	object-fit: contain;
+	object-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.card-body{
+	background: #e8e8e8;
+}
+.card-body a{
+	color: #171b2f;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 1.4rem;
+}
+.card-body i{
+	color: #171b2f;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	transition: all 0.3s ease-in-out;
+}
+.card-body .to-go{
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+.card-body .to-go:hover a{
+	color: #ff6900;
+}
+.card-body .to-go:hover div{
+	transform: rotate(-45deg);
+}
+.card-body .to-go:hover i{
+	color: #ff6900;
+	transition: all 0.3s ease-in-out;
+}
+.card-body .to-go div{
+	transition: all 0.3s ease-in-out;
+}
+.belt{
+	width: 110%;
+	position: absolute;
+	background: #fff;
+	top: 45%;
+	border-radius: 7px;
+	padding: 5px 15px;
+	left: -10px;
+	box-shadow: 0 0 10px #e8e8e8;
+}
+.belt h3{
+	color: #171b2f;
+}
+.col{
+	position: relative;
+}
+.card-overlay{
+	background: linear-gradient(rgba(23, 27, 47, 0.7), rgba(23, 27, 47, 0.7));
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	clip-path:polygon(100% 0, 0% 100%, 100% 100%);
+	transition: all 0.5s ease-in-out;	
+}
+.card:hover .card-overlay{
+transform: translateX(100%);
+}
+.card:hover .card-img-top{
+	transform: scale(1.15);
+}
+.card-img-top {
+	transition: all 0.5s ease-in-out;
+}
+.bodi{
+	margin: 0;
+	padding: 0;
+	min-height: 30vh;
+	background-color: #171b2f;
+}
+.bodi, .nave, .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nave{
+	position: relative;
+	background-color: #fff;
+	padding: 20px;
+	transition: 0.5s;
+	border-radius: 50px;
+	overflow: hidden;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.menu{
+	margin: 0;
+	padding: 0;
+	width: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.nave input:checked ~ .menu{
+	width: 300px;
+}
+.menu li{
+	list-style: none;
+	margin: 0 10px;
+}
+.menu li a{
+   text-decoration: none;
+   color: #666;
+   text-transform: uppercase;
+   font-weight: 600;
+   transition: 0.5s;
+   cursor: pointer;
+}
+.menu li a:hover{
+	color: #161919
+}
+.nave input {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 0;
+}
+.nave span{
+	position: absolute;
+	left: 30px;
+	width: 30px;
+	height: 4px;
+	border-radius: 50px;
+	background-color: #171b2f;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.nave input:checked ~ span{
+	background-color: #ff6900;
+}
+.nave span:nth-child(2) {
+	transform: translateY(-8px);
+}
+.nave input:checked ~ span:nth-child(2) {
+	transform: translateY(0) rotate(-45deg);
+}
+.nave span:nth-child(3) {
+	transform: translateY(8px);
+}
+.nave input:checked ~ span:nth-child(3) {
+	transform: translateY(0) rotate(45deg);
+}
+.move-in-text ul{
+	display: flex;
+	flex-direction: column;
+}
+.move-in-text ul li a{
+	color: #171b2f;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+.move-in-text ul li a:hover{
+	color: #ff6900;
+}
+.properties{
+	width: 100%;
+	padding: 50px 80px;
+}
+.properties ion-icon{
+	color: #ff6900;
+	font-size: 2rem;
+	text-align: center;
+	align-items: center;
+}
+.properties .card{
+	position: relative;
+	overflow: hidden;
+}
+.properties-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #171b2f;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+	border-radius: inherit;
+	transition: all 0.5s ease-in-out;
+	transform: translateY(100%);
+	opacity: 0;
+}
+.properties-overlay p{
+	color: #e8e8e8;
+	font-size: 1.1rem;
+}
+.card:hover .properties-overlay{
+	transform: translateY(0);
+	opacity: 1;
+	z-index: 2;
+}
+.number-overlay{
+	position: absolute;
+	background: silver;
+	right: 10px;
+	top: 10px;
+	padding: 5px 13px;
+	border-radius: 50%;
+	font-weight: bolder;
+	color: #171b2f;
+}
+#demos{
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.tool-carousel .row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tool-carousel .item{
+	width: 300px;
+	height: 300px;
+	background: #171b2f;
+	border-radius: 5px;
+	align-items: center;
+	padding: 30px 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	border: 0.5px solid silver ;
+}
+.tool-carousel{
+	width: 100%;
+	background: #171b2f;
+}
+.logo-holder{
+	padding: 40px;
+}
+.small{
+	display: flex;
+	align-items: center;
+}
+.desktop small i{
+	font-size: 1.4rem;
+	margin: 0px 10px;
+	border-radius: 50%;
+	border: 0.5px solid silver;
+	padding: 10px 13px;
+}
+.desktop .move-in-img img{
+	object-fit: contain;
+	object-position: center;
+}
+.desktop .flag{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 200px 50px;
+	text-align: center;
+}
+.desktop .flag h2{
+	font-size: 3.2rem;
+}
+.desktop .flag p{
+	font-size: 1.1rem;
+}
+.desktop .flag{
+	background: url(shape-14.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.account-desc{
+	padding: 50px 70px;
+}
+ .page-container {
+      display: none;
+    }
+
+    #platform-page {
+      display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

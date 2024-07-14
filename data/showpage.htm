@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .page-container {
+      display: none;
+    }
+
+    #platform-page {
+      display: block;
+    }
+  </style>
+  <title>Page Switching</title>
+</head>
+<body>
+
+  <div class="menu">
+    <button onclick="showPage('platform-page')">Platform</button>
+    <button onclick="showPage('accounts-page')">Our Accounts</button>
+  </div>
+
+  <div id="platform-page" class="page-container">
+    <h2>Platform Page</h2>
+    <!-- Add content for the Platform page here -->
+  </div>
+
+  <div id="accounts-page" class="page-container">
+    <h2>Our Accounts Page</h2>
+    <!-- Add content for the Our Accounts page here -->
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      // Hide all pages
+      var pages = document.querySelectorAll('.page-container');
+      pages.forEach(function(page) {
+        page.style.display = 'none';
+      });
+
+      // Show the selected page
+      var selectedPage = document.getElementById(pageId);
+      if (selectedPage) {
+        selectedPage.style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>

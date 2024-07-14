@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Apex Brokers - Trading</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mediaquerystyle.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<script defer src="script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="auxstyle.css">
+</head>
+<body>
+	<!----------------------- LOADING-PAGE----------------------------------------------->
+	<section class="banner" id="LoadingOverlay">
+		<div class="banner_cover">
+			<div class="banner_loader">
+			<div class="banner_loading"></div>
+		    </div>
+			<div class="banner_text">
+				<h1>APEX BROKER</h1>
+				<span>"Elevate Your Investments, Master Your Success."</span>
+			</div>
+		</div>
+	</section>
+	<!-----------------------LOADING-PAGE-------------------------------------------->
+
+	<!------------------------------main webpage------------------------------------->
+<section id="content">
+	<section class="container-fluid" style="padding: 0;">
+		<nav class="nav nav-pills nav-fill" style="background-color:#171b2f; padding-top:10px;">
+  <a class="nav-link" href="#"><ion-icon name="call-outline"></ion-icon> +1-222-56-78-90 or Request for a call back</a>
+  <a class="nav-link"  href="#"><ion-icon name="notifications-outline"></ion-icon> £20 Discount & Get 24/7 Free Assistance</a>
+  <a class="nav-link" href="#"><ion-icon name="download-outline"></ion-icon> Free Trading Guides</a>
+  <a class="nav-link" href="#"><ion-icon name="headset-outline"></ion-icon> Help Center</a>
+</nav>
+		<nav class="navbar sticky-top navbar-expand-lg " style="background-color: #fff;">
+  <div class="container-fluid">
+  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Apex Broker</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" style="display: flex; align-items: center;"  >Home <ion-icon name="arrow-up-outline" class="arrow" ></ion-icon></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="markets.htm" style="display: flex; align-items: center;">Markets<ion-icon name="arrow-up-outline" class="arrow" ></ion-icon></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style=" color: #ff6900; display: flex; align-items: center;">Trading <ion-icon name="arrow-up-outline" class="arrow" ></ion-icon></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style=" display: flex; align-items: center;">Education <ion-icon name="arrow-up-outline" class="arrow" ></ion-icon></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style=" display: flex; align-items: center;">About <ion-icon name="arrow-up-outline" class="arrow" ></ion-icon></a>
+        </li>
+      </ul>
+    </div>
+        <button class="btn btn-outline-success me-2" type="button" style="background-color: #ff6900; color: #fff; border: 2px solid #ff6900; padding: 8px 30px 8px 30px; font-weight: 400; font-size: 20px;"     onmouseover="this.style.backgroundColor=' #171b2f'; this.style.borderColor=' #171b2f';"
+    onmouseout="this.style.backgroundColor='#ff6900'; this.style.borderColor='#ff6900';">Open an A/C</button>        
+
+  </div>
+</nav>
+<!---------------------------------------------------------------------slideshow----------------------------------------------->
+
+	<section class="container-fluid m-0 p-0">
+		<div class="top-container-fluid">
+			<div class="top001"><h1 id="my-text">Trading</h1><p>Deaching of the great explorer of the truth the builder</p></div>
+			<div class="top002"><a href="#">Home</a> <ion-icon name="arrow-forward-outline"></ion-icon> <a href="#">Trading</a></div>
+		</div>
+
+
+	<div class="bodi">
+	<div class="nave">
+		<input type="checkbox">
+		<span></span>
+		<span></span>
+		<div class="menu">
+			<li><a  onclick="showPage('platform-page')">Platform</a></li>
+			<li><a  onclick="showPage('accounts-page')">Our Accounts</a></li>
+		</div>
+	</div>
+</div>
+		<div class="page-container" id="platform-page">
+			<section class="container-fluid" style="padding: 0; background: #fff;">
+	<div class="move-in hidden">
+		<div class="move-in-img">
+			<img src="mockup-2.png" alt="">
+		</div>
+		<div class="move-in-text r-hidden">
+			<p>Platform</p>
+			<h2>Trade Forex from your <span class="slidetext-standout">Desktop</span></h2>
+			<p>Laborious physical exercise, except to obtain some advantage from it but who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences.</p>
+			<ul>
+				<li><ion-icon name="logo-apple"></ion-icon> <a href="#">Download App For IOS</a></li>
+				<li><ion-icon name="logo-windows"></ion-icon><a href="#"> Download App For Windows</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="properties">
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><ion-icon name="checkmark-outline"></ion-icon> Multiple Order Types</h5>
+      </div>
+      <div class="properties-overlay"><p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p></div>
+      <div class="number-overlay">1</div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><ion-icon name="checkmark-outline"></ion-icon> Multiple Charting</h5>
+      </div>
+       <div class="properties-overlay"><p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p></div>
+       <div class="number-overlay">2</div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><ion-icon name="checkmark-outline"></ion-icon> Newsfeeds</h5>
+      </div>
+       <div class="properties-overlay"><p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p></div>
+       <div class="number-overlay">3</div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><ion-icon name="checkmark-outline"></ion-icon> Technical Indicators</h5>
+      </div>
+       <div class="properties-overlay"><p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p></div>
+       <div class="number-overlay">4</div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><ion-icon name="checkmark-outline"></ion-icon>Stop Loss Facilities</h5>
+      </div>
+       <div class="properties-overlay"><p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p></div>
+       <div class="number-overlay">5</div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><ion-icon name="checkmark-outline"></ion-icon>Multilingual Support</h5>
+      </div>
+       <div class="properties-overlay"><p>Beatae vitae dicta sun explicabo nemo enim ipsam voluptatem volupta.</p></div>
+       <div class="number-overlay">6</div>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<div class="tool-carousel">
+    <div class="intro-text">
+      <br>
+    <p>Why Choose Us</p>
+    <h2>Reason For <span class="slidetext-standout">Choosing Us</span></h2>
+  </div>
+    <section id="demos">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+            	<h4>Friendly and Expert</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-21.png" alt=""></div>
+            </div>
+            <div class="item">
+            	            	<h4>Demo account</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-23.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>24/7 Support</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-22.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>Friendly and Expert</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-21.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>Demo account</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-23.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>24/7 Support</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-22.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>Friendly and Expert</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-21.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>Demo account</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-23.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>24/7 Support</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-22.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>Friendly and Expert</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-21.png" alt=""></div>
+            </div>
+            <div class="item">
+                          	<h4>Demo account</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-23.png" alt=""></div>
+            </div>
+            <div class="item">
+            	            	<h4>24/7 Support</h4>
+              <p>lorem ipsum lal ala al al audhhfhdhfh</p>
+              <div class="logo-holder"><img src="icon-22.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="desktop">
+  		<section class="container-fluid" style="padding: 0; background: #fff;">
+	<div class="move-in hidden">
+		<div class="move-in-text r-hidden">
+			<p>MT4 Platform</p>
+			<h2>Use <span class="slidetext-standout">MT4? </span> Get Exclusive Tools with Apex.</h2>
+			<p>Minus id quod maxime place at facere possimus, omnis voluptas assu- menda omnis dolors repellendus tempor.</p>
+			<ul>
+				<li><ion-icon name="logo-apple"></ion-icon> <a href="#">Ultra fast trade execution</a></li>
+				<li><ion-icon name="logo-windows"></ion-icon><a href="#"> Trading from a smartphone or tablet</a></li>
+				<li><ion-icon name="logo-windows"></ion-icon><a href="#"> No dealing desk, no requotes</a></li>
+			</ul>
+			<small>
+			<button class="btn btn-outline-success me-2" type="button" style="background-color: #171b2f; color: #fff; border: 2px solid #171b2f; padding: 8px 30px 8px 30px; font-weight: 400; font-size: 20px;"     onmouseover="this.style.backgroundColor=' #ff6900'; this.style.borderColor=' #ff6900';"
+    onmouseout="this.style.backgroundColor='#171b2f'; this.style.borderColor='#171b2f';">Read More</button> <i class="bi bi-windows"></i> <i class="bi bi-apple"></i> <i class="bi bi-android"></i></small>
+		</div>
+		<div class="move-in-img">
+			<img src="mockup-1.png" alt="">
+		</div>
+	</div>
+	<div class="flag">
+		<div class="banner-text">
+			<h2>A 360 Trading Experience</h2>
+			<p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+velit esse quam nihil.</p>
+<button class="btn btn-outline-success me-2" type="button" style="background-color: #171b2f; color: #fff; border: 2px solid #171b2f; padding: 8px 30px 8px 30px; font-weight: 400; font-size: 20px;"     onmouseover="this.style.backgroundColor=' #ff6900'; this.style.borderColor=' #ff6900';"
+    onmouseout="this.style.backgroundColor='#171b2f'; this.style.borderColor='#171b2f';">Read More</button>
+		</div>
+	</div>
+  </div>
+	</section>
+</div>
+
+<div class="page-container" id="accounts-page">
+	<section class="account-page">
+		<section class="accounttypes">
+    <div class="intro-text">
+        <p>Account Types</p>
+        <h2>Forex Trading <span class="slidetext-standout">Accounts</span></h2>
+    </div>
+     <section class="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+            
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="pexels-alesia-kozik-6780789.jpg" alt="">
+                <p>A standard forex trading account is a common type of account used by traders to participate in the foreign exchange market. This account type is suitable for those who have some experience in trading and are looking for a more traditional and straightforward approach.</p>
+                <span>Open Your Account <ion-icon name="arrow-down-outline"></ion-icon></span>
+              </div>
+              <div class="testimonial-name">Standard a/c <i class="bi bi-award-fill"></i></div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+             <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="sajad-nori-LWD60a5a15I-unsplash.jpg" alt="">
+                <p>Explore a new dimension of forex trading with the Apex Broker Commission Account. Our commission account is designed to empower traders with enhanced control and transparency in their trading journey.</p>
+                <span>Open Your Account <ion-icon name="arrow-down-outline"></ion-icon></span>
+              </div>
+              <div class="testimonial-name">Commission a/c <i class="bi bi-trophy"></i></div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+             <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="maxim-hopman-fiXLQXAhCfk-unsplash.jpg" alt="">
+                <p>An STP Pro (Straight Through Processing Pro) account in forex trading is a type of trading account offered by certain brokers. STP Pro accounts are designed to provide traders with direct access to the interbank forex market, offering enhanced transparency and potentially lower spreads.</p>
+                <span>Open Your Account <ion-icon name="arrow-down-outline"></ion-icon></span>
+              </div>
+              <div class="testimonial-name">STP Pro a/c <i class="bi bi-briefcase"></i></div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	</section>
+	<section class="account-desc">
+    <div class="intro-text">
+    <p>Account Types</p>
+    <h2><span class="slidetext-standout blue">Bullion Trading</span><span class="slidetext-standout"> Accounts</span></h2>
+  </div>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-top">
+        <h5 class="card-title">Standards a/c</h5>
+      <p>Idea of denouncings master-builder ..</p></div>
+      <div class="iconball"><div class="iconwrap"><i class="bi bi-award-fill"></i></div></div>
+      <div class="card-body">
+        <p class="card-text">Idea of denouncings master-builder ..</p>
+      </div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+           <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+    </div>
+  </div>
+</div>
+	</section>	
+</div>
+
+
+<section class="footer">
+	<div class="top_footer">
+		
+		<div class="footer_block">
+			<div class="header"><h3>Our Community</h3>
+				<p>Here you'll find regular market updates, expert tips & stories.</p>
+				<div class="email">
+					<input type="Email" placeholder="Email address..." required> <i class="bi bi-send"></i>
+				</div>
+				<div class="social_media">
+					<div class="heading"><h3>Follow Us</h3></div>
+					<div class="social-icons">		
+						<a href="#"><i class="bi bi-facebook"></i></a> <a href="#"><i class="bi bi-instagram"></i></a> <a href="#"><i class="bi bi-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_block">
+			<div class="header"><h3>Useful Links</h3></div>
+			<div class="footer_links">
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Meet Our Team</a></li>
+					<li><a href="#">Our Accounts</a></li>
+					<li><a href="#">Platform</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+					<ul>
+					<li><a href="#">Education</a></li>
+					<li><a href="#">history</a></li>
+					<li><a href="#">Markets</a></li>
+					<li><a href="#">Faq's</a></li>
+					<li><a href="#">Details Page</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_block">
+			<div class="live-chart-card">
+				<div class="header"><h3>Need assistance?</h3><p>Live chat with our service team for information & assistance.</p></div>
+				<div class="footer_btn"><picture><img src="assistance-1.jpg" alt="..."></picture><div class="text"><h3>Live Chat With</h3><a href="#">Expert</a> <i class="bi bi-arrow-down-right spp-arrow"></i></div></div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="text"><p>© <span class="slidetext-standout">2023 Bullion.</span> All Rights Reserved.</p> </div>
+	<div class="payment_options"><ul>
+			<li></li>
+			<li></li>
+			<li><ion-icon name="logo-paypal"></ion-icon></li>
+			<li></li>
+			<li></li>
+		</ul></div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js" integrity="sha512-2Obw6vDJ3XjyB1zStDAWqNv9K5ggY6yCEgGxO8GBgFK5dARh2LfovgZcNUn7Rv2Bbj8z7yca53Tq/lWm0NW8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+ <script>
+        const mytext = new SplitType('#my-text');
+
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.2,
+            duration: 0.1
+        });
+    </script>
+     <script>
+  $(document).ready(function() {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1 // Display 1 item on small screens
+        },
+        768: {
+          items: 2 // Display 2 items on medium screens
+        },
+        992: {
+          items: 3 // Display 3 items on large screens
+        }
+      }
+    });
+
+    $('.play').on('click', function() {
+      owl.trigger('play.owl.autoplay', [1000])
+    });
+
+    $('.stop').on('click', function() {
+      owl.trigger('stop.owl.autoplay')
+    });
+  });
+</script>
+<script>
+    function showPage(pageId) {
+      // Hide all pages
+      var pages = document.querySelectorAll('.page-container');
+      pages.forEach(function(page) {
+        page.style.display = 'none';
+      });
+
+      // Show the selected page
+      var selectedPage = document.getElementById(pageId);
+      if (selectedPage) {
+        selectedPage.style.display = 'block';
+      }
+    }
+  </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
